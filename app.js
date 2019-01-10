@@ -10,6 +10,7 @@ mongoose.connect('mongodb://localhost:27017/store', { useNewUrlParser: true })
 mongoose.Promise = global.Promise;
 var db = mongoose.connection;
 
+app.use('/uploads',express.static('uploads'))
 app.use(morgan('dev'))
 app.use(bodyParser.json())
 
