@@ -5,7 +5,7 @@ __The Api is build with NodeJs ExpressJs MongoDB__
 
 __*The routes are authenticated using json web token (jwt) .*__
 
-- create and Authenticate user
+- create , Authenticate and delete user
 - Add , retrieve ,update and delete  Products
 - add ,retrieve and delete orders
 
@@ -14,20 +14,26 @@ __*The routes are authenticated using json web token (jwt) .*__
 
 ## Routes
 --------
-# user/signup
+# /user/signup
 ## POST
 __create a new user__
  ##### body (raw)
  - email(string,required)
  - password(string,required)
  
-# user/login
+# /user/login
 ## POST
 __Authenticate the user__
  ##### body (raw)
  - email(string,required)
  - password(string,required)
    
+ # /user/{id}
+ ## DELETE 
+ __delete the user__ 
+ ##### Header(Authorization)
+ - token(string,required)
+ 
 --------
 # /products
 ## GET
