@@ -43,7 +43,7 @@ __Authenticate the user__
   
 # /products/{id}
 ## GET
- __get list of all products__
+ __get details of the product__
 ## PATCH
  __update the  product__
  ##### body (raw)
