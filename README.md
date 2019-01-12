@@ -5,6 +5,10 @@ __The Api is build with NodeJs ExpressJs MongoDB__
 
 __*The routes are authenticated using json web token (jwt) .*__
 
+- create and Authenticate user
+- Add , retrieve ,update and delete  Products
+- add ,retrieve and delete orders
+
 --------
 
 
